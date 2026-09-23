@@ -17,7 +17,7 @@ class SimuladorEsperaTest {
     }
 
     @Test
-    @EnabledIfEnvironmentVariable(named = "ENV", matches = "DEV")
+    //@EnabledIfEnvironmentVariable(named = "ENV", matches = "DEV")
     public void deveEsperarENaoDarTimeout() {
         //Assumptions.assumeTrue("PROD".equals(System.getProperty("ENV")), () -> "Teste ignorado, nao deve ser executado em PRODUÇAO");
         Assertions.assertTimeoutPreemptively(Duration.ofSeconds(1), () -> SimuladorEspera.esperar(Duration.ofMillis(10)));

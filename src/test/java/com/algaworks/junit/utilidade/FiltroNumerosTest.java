@@ -12,7 +12,7 @@ class FiltroNumerosTest {
 
     @Test
     public void deveRetornarApenasNumerosPares() {
-        List<Integer> numeros = Arrays.asList(1, 2, 3, 4);
+        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         List<Integer> numerosPares = Arrays.asList(2, 4, 6, 8);
         List<Integer> resultadoFiltro = FiltroNumeros.numerosPares(numeros);
         Assertions.assertIterableEquals(numerosPares, resultadoFiltro);
